@@ -1,0 +1,76 @@
+<div class="page-start">
+    <nav class="flex items-center justify-between flex-wrap bg-white py-3 px-8">
+        <a href="/" class="flex items-center flex-shrink-0 text-white mr-6 w-2/5">
+            <img src="/08575/loho.png" alt="vkay logo" height="45px" width="45px">
+            </svg>
+            <span class="font-semibold text-2xl tracking-tight font-inter"> <span
+                    style="color: #3753B9;">VKAY</span> <span style="color: #FF0000;">Diagonistics</span> </span>
+        </a>
+        <div class="block lg:hidden">
+            <button onclick="swapFunctions()"
+                class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div class="block flex-grow lg:flex lg:items-center lg:w-auto justify-end" id="show">
+            <div class="text-sm lg:flex-grow">
+                <a href="/" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white  mr-4"
+                    style="color:#FF0000;">
+                    Home
+                </a>
+                <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white  mr-4"
+                    style="color:#FF0000;">
+                    Who we are
+                </a>
+                <a href="/#what-we-do" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white  mr-4"
+                    style="color:#FF0000;">
+                    What we do
+                </a>
+                <a href="/#book-a-test" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
+                    style="color:#FF0000;">
+                    Book a Test
+                </a>
+                <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
+                    style="color:#FF0000;">
+                    Contact Us
+                </a>
+            </div>
+            <div class="w-11/12	flex items-center justify-between">
+                <a href="/"
+                    class="block mt-4 lg:inline-block font-semibold lg:mt-0 text-white hover:text-white mr-4 text-base"
+                    style="color: #3753B9;">Home</a>
+                <a href="/about"
+                    class="block mt-4 lg:inline-block font-semibold lg:mt-0 text-white hover:text-white mr-4 text-base"
+                    style="color: #FF0000;">Who We Are</a>
+                <a href="/#what-we-do"
+                    class="font-inter font-semibold block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4 text-base"
+                    style="color: #3753B9;">
+                    What we do
+                </a>
+                <a href="/#contact"
+                    class="font-inter font-semibold smooth-scroll block mt-4 lg:inline-block lg:mt-0 hover:text-white hover:text-white mr-4 text-base"
+                    style="color: #3753B9;">
+                    Contact Us
+                </a>
+                <button href="" id="myBtn"
+                    class="font-inter font-semibold inline-block px-4 py-4	 leading-none border rounded-xl hover:text-white hover:border-red hover:text-white mt-4 lg:mt-0 text-base"
+                    style="background-color: #FF0000; border-color: #FF0000;">
+                    Book a Test
+                </button>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function swapFunctions() {
+            if (document.getElementById('show').style.display === "block") {
+                document.getElementById('show').style.display = "none";
+                console.log("well done")
+            } else {
+                document.getElementById('show').style.display = "block";
+            };
+        }
+    </script>
+</div>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <section>
+        <div class=" py-0 my-24" id="book-a-test">
+            <center>
+                <p class="font-inter font-semibold inline-block my-8 border-b-4 lg:mt-0 pb-2 text-4xl"
+                    style="color: #ff0000; border-color: #3753B9;">
+                    <span class="text-5xl font-semibold">B</span>ook a Test
+                </p>
+            </center>
+            <div class="cover-the-form-x-others" style="width: 80%;
+          margin: auto;">
+                <form action="" method="GET" id="form" class="w-full max-w-lg">
+                    <center>
+                        <h2 class="font-semibold text-4xl mb-8" style="color: #3753B9;">
+                            Contact Us
+                        </h2>
+                    </center>
+                    <div id="error"></div>
+                    <div class="flex flex-wrap ">
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-first-name">
+
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                id="first-name" type="text" placeholder="First Name" name="First-Name">
+                        </div>
+                        <br>
+                        <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-last-name">
+
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-gray"
+                                id="last-name" type="text" placeholder="Last Name" name="Last-Name">
+                        </div>
+                        <br>
+                    </div>
+
+
+                    <div class="flex flex-wrap -mx-3 mb-2">
+                        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <br>
+                            <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                for="grid-city">
+
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="email" type="email" placeholder="admin@vkaydiagnostics.com" name="Email">
+                        </div>
+                        <div class="w-full md:w-1/3 px-3 mb-2 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                for="grid-state">
+                                Test Type
+                            </label>
+                            <div class="relative">
+                                <select name="test-type-selected"
+                                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-400 py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-state" required>
+                                    <option value="Pathology-Test">-- Select --</option>
+                                    <option value="Pathology-Test">Pathology Test</option>
+                                    <option value="ECG">ECG</option>
+                                    <option value="Ultrasound">Ultrasound</option>
+                                    <option value="Wellness-test">Wellness Test</option>
+                                    <option value="Pre-Employment-test">Pre-Employment Test</option>
+                                    <option value="Nanny-screening">Nanny screening</option>
+                                    <option value="Food-handler-test">Food Handler Test</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                                <br>
+
+                                <!-- <div
+                              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 20 20">
+                                  <path
+                                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                              </svg>
+                          </div> -->
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                for="grid-zip">
+                                Preffered Date
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                type="date" name="Prefferd-Date" required>
+                            <br>
+                            <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                for="grid-zip">
+                                Preffered Time
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                type="time" name="Preffered-Time" required>
+                            <br>
+                        </div>
+                        <div style="
+                  display: flex;
+                  justify-content: space-around;
+                  width: 100%;
+              ">
+                            <button type="submit" value="Submit" class="mt-1 px-3 py-3 text-dark"
+                                style="background-color: red;"> submit </button>
+                            <p style="line-height: 50px"> OR </p>
+                            <div class="contact_place inline-block">
+                                <div class="inner__middle flex flex-col justify-around items-center">
+                                    <div>
+                                        <a href="https://wa.link/2wr80l">
+                                            <button
+                                                class="mt-1 px-3 py-3 border text-white shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none rounded-md sm:text-2xl font-semibold remove-shii"
+                                                style="background-color: #FF0000; border-color: #FF0000;">Book Via
+                                                WhatsApp
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+                <!-- <div class="contact_place">
+              <div class="inner__middle flex flex-col justify-around items-center">
+                <div>
+                  <a href="https://wa.link/2wr80l">
+                    <button
+                      class="mt-1 px-3 py-3 border text-white shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none block rounded-md sm:text-4xl font-semibold remove-shii"
+                      style="background-color: #FF0000; border-color: #FF0000; margin-top: 2rem;">Book Via WhatsApp
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+            </div>
+
+        </div>
+
+
+
+        </div>
+    </section>
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mcj26017'});return false;">Schedule time
+        with me</a>
+    <!-- Calendly link widget end -->
+</body>
+
+</html>
